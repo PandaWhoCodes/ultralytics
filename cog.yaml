@@ -1,0 +1,31 @@
+build:
+  gpu: true
+  cuda: "12.1"
+  python_version: 3.8
+  system_packages:
+    - gcc
+    - git
+    - zip
+    - curl
+    - htop
+    - libgl1
+    - libglib2.0-0
+    - libpython3-dev
+    - gnupg
+    - g++
+    - libusb-1.0-0
+    - openssl
+    - tar
+  python_packages:
+    - pip
+    - wheel
+    - numpy==1.23.5
+    - torch==2.1.0
+    - torchvision==1.0.1
+    - paddlepaddle==2.4.2
+    - x2paddle
+    - albumentations
+    - comet
+    - pycocotools
+    - pytest-cov
+predict: "predict.py:Predictor"
